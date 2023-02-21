@@ -22,4 +22,9 @@ class Home extends BaseController
             echo $dt['nik'] . "<br>";
         }
     }
+
+    public function form()
+    {
+        return view('form');
+    }
 }
