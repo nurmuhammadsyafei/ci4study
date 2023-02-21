@@ -1,0 +1,34 @@
+--Codeigniter 4--
+
+Routes bisa di custom, dan mesti setting $routes->setAutoRoute(true); agar routes auto routes mengikuti link / uri segmen
+
+environment set development agar ketika error keluar debug 
+
+buat model masing masing dan konfigurasi model ke masing masing table
+
+-- QUERY GENERAL BY FEI --
+- Set pada BaseController > public function initController()
+paste query berikut ==>>  $this->db = db_connect();
+
+- kemudian dibawah nama Class pada controller buat protect string sbb    
+
+protected $db;
+
+- and then buat query dengan sintax sebagai berikut
+$this->db->query("your query ")->getResultArray();
+
+Var_dump();die(); bisa disingkat dengan dd();
+
+- Load view dengan query berikut => return view('table',$data);
+
+
+- Session
+syntax : session()->setFlashdata('pesan','Selamat anda berhasil registrasi');
+
+- Redirect to
+syntax : return redirect()-?to('/');
+
+
+
+
+|||||||||||APLIKASI INI ADA DI GIT REPO https://github.com/nurmuhammadsyafei/ci4study |||||||||||

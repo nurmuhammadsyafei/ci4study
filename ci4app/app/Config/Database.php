@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => 'mysyafei.com',
+        'username' => 'mysyafei_admin',
+        'password' => '744144Mamas',
+        'database' => 'mysyafei_study',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
